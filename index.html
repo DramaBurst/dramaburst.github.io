@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DramaBurst - AI Dramas & Reels</title>
   <meta name="description" content="Watch addictive AI dramas, short reels, and bite-sized stories anytime with DramaBurst.">
-  <link rel="icon" type="image/png" sizes="64x64" href="dramaburst-assets/icon-64.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="dramaburst-assets/icon-64-rounded.png">
   <link rel="apple-touch-icon" href="dramaburst-assets/icon-192.png">
   <style>
     :root {
@@ -292,17 +292,29 @@
       width: 36px;
       height: 36px;
       border-radius: 12px;
-      font-size: 18px;
-      font-weight: 950;
+      flex: 0 0 36px;
     }
 
     .store-icon.gp {
-      background: linear-gradient(135deg, #42e695, #3bb2ff);
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
     }
 
     .store-icon.ios {
-      color: #17131f;
-      background: linear-gradient(135deg, #ffffff, #d7d5ff);
+      color: #111118;
+      background: linear-gradient(135deg, #ffffff, #ecebff);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);
+    }
+
+    .store-icon svg {
+      display: block;
+      width: 27px;
+      height: 27px;
+    }
+
+    .store-icon.ios svg {
+      width: 23px;
+      height: 28px;
     }
 
     .store-copy span {
@@ -1227,19 +1239,29 @@
         <div class="download-panel">
           <div class="download-content">
             <div>
-              <div class="section-kicker" data-i18n="downloadKicker">Coming soon</div>
               <h2 data-i18n="downloadTitle">Bring the drama with you.</h2>
               <p data-i18n="downloadCopy">Download DramaBurst to watch addictive AI dramas, trending short reels, and bite-sized stories anytime.</p>
               <div class="store-buttons" aria-label="Download DramaBurst">
                 <a class="store-btn" href="https://play.google.com/store/apps/details?id=dramaburst.drama.shorts" target="_blank" rel="noopener noreferrer" aria-label="Get DramaBurst on Google Play">
-                  <span class="store-icon gp">▶</span>
+                  <span class="store-icon gp" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" focusable="false">
+                      <path fill="#4285f4" d="M7.3 5.5C6.5 6 6 6.9 6 8v32c0 1.1.5 2 1.3 2.5L26 24 7.3 5.5z"></path>
+                      <path fill="#34a853" d="M31.9 18.1 9.8 5.4c-.9-.5-1.8-.5-2.5.1L26 24l5.9-5.9z"></path>
+                      <path fill="#fbbc04" d="M31.9 29.9 26 24 7.3 42.5c.7.6 1.6.6 2.5.1l22.1-12.7z"></path>
+                      <path fill="#ea4335" d="m41 21.5-9.1-3.4L26 24l5.9 5.9 9.1-3.4c1.7-.7 1.7-4.3 0-5z"></path>
+                    </svg>
+                  </span>
                   <span class="store-copy">
                     <span data-i18n="gpSmall">Get it on</span>
                     <strong>Google Play</strong>
                   </span>
                 </a>
                 <a class="store-btn" href="https://apps.apple.com/us/app/dramaburst-ai-short-dramas/id6800613342" target="_blank" rel="noopener noreferrer" aria-label="Download DramaBurst on the App Store">
-                  <span class="store-icon ios">A</span>
+                  <span class="store-icon ios" aria-hidden="true">
+                    <svg viewBox="0 0 384 512" focusable="false">
+                      <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5c0 26.2 4.8 53.1 14.4 80.7 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.4zM262.1 104.5C289.4 72.1 286.9 42.6 286.1 32c-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                    </svg>
+                  </span>
                   <span class="store-copy">
                     <span data-i18n="iosSmall">Download on the</span>
                     <strong>App Store</strong>
@@ -1304,7 +1326,6 @@
         catalogKicker: "Drama library",
         catalogTitle: "Romance, revenge, fantasy, secrets.",
         catalogCopy: "A growing lineup of high-intensity AI short dramas, ready for quick breaks and late-night binges.",
-        downloadKicker: "Coming soon",
         downloadTitle: "Bring the drama with you.",
         downloadCopy: "Download DramaBurst to watch addictive AI dramas, trending short reels, and bite-sized stories anytime.",
         gpSmall: "Get it on",
@@ -1348,7 +1369,6 @@
         catalogKicker: "剧集库",
         catalogTitle: "爱情、复仇、幻想、秘密。",
         catalogCopy: "持续扩充的高情绪 AI 短剧阵容，适合碎片时间和睡前连续追看。",
-        downloadKicker: "即将上线",
         downloadTitle: "把短剧装进口袋。",
         downloadCopy: "下载 DramaBurst，随时观看上头 AI 短剧、热门 Reels 和分钟级故事。",
         gpSmall: "下载自",
