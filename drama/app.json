@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "dramaburst",
+  "name": "DramaBurst",
+  "logo": "./assets/dramaburst.png",
+  "theme": {
+    "gradient": {
+      "angle": 94.255274,
+      "stops": [
+        {
+          "color": "#7B4FF2",
+          "position": 0
+        },
+        {
+          "color": "#DD4FE7",
+          "position": 1
+        }
+      ]
+    },
+    "textColor": "#FFFFFF"
+  },
+  "labels": {
+    "open": "Open",
+    "continue": "Continue Watching"
+  },
+  "stores": {
+    "android": "https://play.google.com/store/apps/details?id=dramaburst.drama.shorts",
+    "ios": null
+  },
+  "attribution": {
+    "enabled": true,
+    "pixelId": "3522799214556664",
+    "adjustToken": "25ug6bck",
+    "extraParams": {},
+    "clickEvent": "StartButtonClick"
+  }
+}
