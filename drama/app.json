@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "dramaburst",
+  "defaultDramaId": "1000243-self",
   "name": "DramaBurst",
   "logo": "./assets/dramaburst.png",
   "theme": {
