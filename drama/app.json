@@ -1,7 +1,13 @@
 {
   "schemaVersion": 1,
   "id": "dramaburst",
-  "defaultDramaId": "1000243-self",
+  "dramaFallback": {
+    "defaultLanguage": "en",
+    "byLanguage": {
+      "en": "1000243-self",
+      "es": "1001629-self"
+    }
+  },
   "name": "DramaBurst",
   "logo": "./assets/dramaburst.png",
   "theme": {
